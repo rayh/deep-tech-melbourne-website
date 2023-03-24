@@ -15,7 +15,7 @@ export default function Home() {
         <title>Deep Tech Melbourne</title>
         <meta name="description" content="Deep Tech Melbourne is a meetup for science-led innovation.  Calling on entreprenuers, founders, technologists, scientists and enthusiasts alike" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/dtm-logo.png" />
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
