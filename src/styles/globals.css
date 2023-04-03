@@ -44,14 +44,20 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 255, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
+    --primary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
+      /* rgba(255, 94, 1, 1) 10%, */
+      rgba(1, 255, 14, 1) 20%,
+      rgb(1, 1, 255), 
+      rgba(255, 1, 255, 1) 80%);
+    --secondary-glow: linear-gradient(
+      to top left,
+      /* rgba(255, 94, 1, 1), */
+      rgba(1, 255, 14, 1) 20%,
+      rgb(1, 1, 255), 
+      rgba(255, 1, 255, 1) 80%
     );
 
     --tile-start-rgb: 2, 13, 46;
