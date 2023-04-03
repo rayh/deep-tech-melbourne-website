@@ -49,15 +49,15 @@
     --primary-glow: linear-gradient(
       to bottom right,
       /* rgba(255, 94, 1, 1) 10%, */
-      rgba(1, 255, 14, 1) 20%,
+      rgba(1, 255, 14, 1) 30%,
       rgb(1, 1, 255), 
-      rgba(255, 1, 255, 1) 80%);
+      rgba(255, 1, 255, 1) 70%);
     --secondary-glow: linear-gradient(
       to top left,
       /* rgba(255, 94, 1, 1), */
-      rgba(1, 255, 14, 1) 20%,
+      rgba(1, 255, 14, 1) 30%,
       rgb(1, 1, 255), 
-      rgba(255, 1, 255, 1) 80%
+      rgba(255, 1, 255, 1) 70%
     );
 
     --tile-start-rgb: 2, 13, 46;
