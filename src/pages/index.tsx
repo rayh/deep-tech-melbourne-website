@@ -37,7 +37,7 @@ export default function Home() {
           <Link href="https://lu.ma/dtm" icon={<RxCalendar />} title="Events" description="Register to find out about our upcoming events on Lu.ma"/>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfYHHALyyONYQQtGwPT3xNQhNAjcwHR7qTT1JgZidi-CCFplw/viewform" icon={<RxSpeakerLoud />} title="Speak" description="Let us know if you're keen to present at a future event"/>
           <Link href="https://discord.gg/CuKyvV8ER3" icon={<RxDiscordLogo />} title="Discord" description="Keep the conversation going by joining our Discord"/>
-          <Link href="https://www.youtube.com/channel/UCmuFEYdQzZ0MHWJfmnJG2jQ" icon={<RxVideo />} title="Youtube" description="Watch previous talks, panels and conversations"/>
+          <Link href="https://www.youtube.com/@DeepTechMelbourne" icon={<RxVideo />} title="Youtube" description="Watch previous talks, panels and conversations"/>
           {/* <Link href="mailto:hello@dtm.wtf" icon={<RxPaperPlane />} title="Contact" description="Got a question? reach out to the organisers"/> */}
         </div>
 
