@@ -1,34 +1,11 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { parallax } from "tsparticles-demo-configs";
+// import { parallax } from "tsparticles-demo-configs";
 import type { Container, Engine } from "tsparticles-engine";
 
-parallax.background = { 
-    color: '#000022'
-};
-parallax.fullScreen = {
-    enable: true,
-    zIndex: -1,
-}
-parallax.particles.number.value = 100;
-parallax.particles.color.value = [
-    '#00ff33',
-    '#ff3300',
-    '#0033ff',
-];
-parallax.particles.size.value = 2;
-parallax.particles.size.animation = {
-    enable: false,
-}
-parallax.particles.opacity.animation = {
-    enable: false,
-}
-parallax.interactivity.events.onHover.enable = false;
-parallax.interactivity.events.onHover.parallax.force = 100;
-parallax.particles.links.distance = 300;
-parallax.particles.links.color = '#777777';
-console.log(parallax)
+const parallax = {"name":"Parallax","particles":{"number":{"value":100,"density":{"enable":true}},"color":{"value":["#00ff33","#ff3300","#0033ff"]},"shape":{"type":"circle"},"opacity":{"value":{"min":0.1,"max":0.5},"animation":{"enable":false}},"size":{"value":2,"animation":{"enable":false}},"links":{"enable":true,"distance":300,"color":"#777777","opacity":0.4,"width":1},"move":{"enable":true,"speed":2}},"interactivity":{"events":{"onHover":{"enable":false,"mode":"grab","parallax":{"enable":true,"smooth":10,"force":100}},"onClick":{"enable":true,"mode":"push"}},"modes":{"grab":{"distance":400,"links":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":0.8},"repulse":{"distance":200},"push":{"quantity":4},"remove":{"quantity":2}}},"background":{"color":"#000022"},"fullScreen":{"enable":true,"zIndex":-1}}
+console.log(JSON.stringify(parallax))
 
 export const ParticleEffect = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
