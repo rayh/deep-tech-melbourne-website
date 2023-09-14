@@ -7,6 +7,7 @@
   min-height: 80vh;
 }
 
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -42,9 +43,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  grid-template-rows: repeat(6, minmax(15%, auto));
+  /* width: var(--max-width); */
+  /* max-width: 100%; */
 }
 
 .card {
@@ -76,6 +77,19 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+}
+
+.columns {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.calendar .heading {
+  margin-bottom: 1rem;
 }
 
 .center {
@@ -290,7 +304,11 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, minmax(50%, auto));
+    grid-template-rows: repeat(2, minmax(35%, auto));
+  }
+  .columns {
+    flex-direction: column;
   }
 }
 
